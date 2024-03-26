@@ -7,18 +7,18 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="Vector：$$  \begin{bmatrix} x\y\1\ \end{bmatrix}  \begin{bmatrix} x\y\0\ \end{bmatrix}$$  点乘：  $$ \vec{a} · \vec{b} &#x3D; |a|  |b| \cos \theta $$  $$ \vec{a} · \vec{b} &#x3D; \begin{bmatrix} Xa\Ya\Za">
+<meta name="description" content="Vector：    \begin{bmatrix} x\\y\\1\\ \end{bmatrix}   \begin{bmatrix} x\\y\\0\\ \end{bmatrix} 点乘： \vec{a} · \vec{b} &#x3D; \|a\|  \|b\| \cos \theta\vec{a} · \vec{b} &#x3D; \begin{bmatrix} Xa\\Ya\\Za\\ \end{bmat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GAMES101_ep01-04">
 <meta property="og:url" content="http://arsnshsj.com/2024/03/26/GAMES101-ep01-04/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Vector：$$  \begin{bmatrix} x\y\1\ \end{bmatrix}  \begin{bmatrix} x\y\0\ \end{bmatrix}$$  点乘：  $$ \vec{a} · \vec{b} &#x3D; |a|  |b| \cos \theta $$  $$ \vec{a} · \vec{b} &#x3D; \begin{bmatrix} Xa\Ya\Za">
+<meta property="og:description" content="Vector：    \begin{bmatrix} x\\y\\1\\ \end{bmatrix}   \begin{bmatrix} x\\y\\0\\ \end{bmatrix} 点乘： \vec{a} · \vec{b} &#x3D; \|a\|  \|b\| \cos \theta\vec{a} · \vec{b} &#x3D; \begin{bmatrix} Xa\\Ya\\Za\\ \end{bmat">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://arsnshsj.com/img/404.jpg">
 <meta property="og:image" content="http://arsnshsj.com/img/404.jpg">
 <meta property="og:image" content="http://arsnshsj.com/img/404.jpg">
 <meta property="article:published_time" content="2024-03-26T13:43:47.000Z">
-<meta property="article:modified_time" content="2024-03-26T14:35:21.338Z">
+<meta property="article:modified_time" content="2024-03-26T14:44:48.225Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Games101">
 <meta name="twitter:card" content="summary">
@@ -66,7 +66,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"arsnshsj.com","author":"John Doe","root":"/","typed_text":null,"theme_version":"2.1.6","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)Hey! Good again!","hideText":"(●—●)Oh, crash!"},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms","author":"Post author: ","copyright_link":"Post link: ","copyright_license_title":"Copyright Notice: ","copyright_license_content":"All articles in this blog are licensed under undefined unless otherwise stated.","copy_success":"Copied","copy_failure":"Copy failed","open_read_mode":"Enter reading mode","exit_read_mode":"Exit reading mode","notice_outdate_message":"It has been undefined days since the last update, the content of the article may be outdated.","sticky":"TOP","just":"Just","min":"minutes ago","hour":"hours ago","day":"days ago","month":"months ago"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-26 22:35:21"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-26 22:44:48"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.6" id="trm-switch-style">
@@ -359,44 +359,45 @@
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
     <ul>
-<li><p>Vector：<br>$$<br>  \begin{bmatrix} x\y\1\ \end{bmatrix}<br>  \begin{bmatrix} x\y\0\ \end{bmatrix}<br>$$</p>
+<li><p>Vector：</p>
+<script type="math/tex; mode=display">
+  \begin{bmatrix} x\\y\\1\\ \end{bmatrix}
+  \begin{bmatrix} x\\y\\0\\ \end{bmatrix}</script></li>
+<li><p>点乘：</p>
+<script type="math/tex; mode=display">\vec{a} · \vec{b} = \|a\|  \|b\| \cos \theta</script><script type="math/tex; mode=display">\vec{a} · \vec{b} = \begin{bmatrix} Xa\\Ya\\Za\\ \end{bmatrix} *\begin{bmatrix} Xb\\Yb\\Zb\\ \end{bmatrix}</script><p>  因为有  </p>
+<script type="math/tex; mode=display">\cos \theta</script><p>  所以可以用向量点乘的结果来判断一个点在一条边的左侧还是右侧，在三角形中有比较多的应用；还可以判断两个向量是否接近，两个单位向量点乘等于1说明两个向量重合，那么两个单位向量点乘越接近1说明两个向量越接近</p>
 </li>
-<li><p>点乘：<br>  $$ \vec{a} · \vec{b} &#x3D; |a|  |b| \cos \theta $$<br>  $$ \vec{a} · \vec{b} &#x3D; \begin{bmatrix} Xa\Ya\Za\ \end{bmatrix} *\begin{bmatrix} Xb\Yb\Zb\ \end{bmatrix}$$<br>  因为有<br>  $$ \cos \theta $$<br>  所以可以用向量点乘的结果来判断一个点在一条边的左侧还是右侧，在三角形中有比较多的应用；还可以判断两个向量是否接近，两个单位向量点乘等于1说明两个向量重合，那么两个单位向量点乘越接近1说明两个向量越接近</p>
-</li>
-<li><p>叉乘：<br>  $$ \vec{a} · \vec{b} &#x3D; |a|  |b| \sin \theta $$<br>  $$ \vec{a} · \vec{b} &#x3D; \begin{bmatrix} 0&amp;-Za&amp;Ya\Za&amp;0&amp;-Xa\-Ya&amp;Xa&amp;0\ \end{bmatrix} *\begin{bmatrix} Xb\Yb\Zb\ \end{bmatrix}$$<br>  方向垂直于<br>  $$\vec{a} 和 \vec{b}$$<br>  这里使用右手坐标系，从a转到b大拇指的方向即为结果的方向</p>
-</li>
-<li><p>Matrix：</p>
-<ul>
+<li>叉乘：<script type="math/tex; mode=display">\vec{a} · \vec{b} = \|a\|  \|b\| \sin \theta</script><script type="math/tex; mode=display">\vec{a} · \vec{b} = \begin{bmatrix} 0&-Za&Ya\\Za&0&-Xa\\-Ya&Xa&0\\ \end{bmatrix} *\begin{bmatrix} Xb\\Yb\\Zb\\ \end{bmatrix}</script>  方向垂直于 <script type="math/tex; mode=display">\vec{a} 和 \vec{b}</script>  这里使用右手坐标系，从a转到b大拇指的方向即为结果的方向</li>
+<li>Matrix：<ul>
 <li>Transpose of a Matrix：</li>
 </ul>
 </li>
-<li><p>Transformation:</p>
-<ul>
+<li>Transformation:<ul>
 <li>Scale:<ul>
-<li>$$ \begin{bmatrix} xx\yy\ \end{bmatrix}  &#x3D; \begin{bmatrix} Sx&amp;0\0&amp;Sy\ \end{bmatrix} \begin{bmatrix} x\y\ \end{bmatrix}$$</li>
+<li><script type="math/tex; mode=display">\begin{bmatrix} xx\\yy\\ \end{bmatrix}  = \begin{bmatrix} Sx&0\\0&Sy\\ \end{bmatrix} \begin{bmatrix} x\\y\\ \end{bmatrix}</script></li>
 </ul>
 </li>
 <li>Shear:<ul>
-<li><img src="https://cdn.jsdelivr.net/gh/arsnshsj/blog-imgs@main/2.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></li>
-<li>$$ \begin{bmatrix} xx\yy\ \end{bmatrix}  &#x3D; \begin{bmatrix} 1&amp;a\0&amp;1\ \end{bmatrix} \begin{bmatrix} x\y\ \end{bmatrix}$$</li>
+<li><img src="Https://cdn.jsdelivr.net/gh/arsnshsj/blog-imgs@main/2.png" alt="" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></li>
+<li><script type="math/tex; mode=display">\begin{bmatrix} xx\\yy\\ \end{bmatrix}  = \begin{bmatrix} 1&a\\0&1\\ \end{bmatrix} \begin{bmatrix} x\\y\\ \end{bmatrix}</script></li>
 </ul>
 </li>
 <li>Rotate：<ul>
-<li>$$ \begin{bmatrix} xx\yy\ \end{bmatrix}  &#x3D; \begin{bmatrix} \cos \theta&amp;-\sin \theta\ \sin \theta&amp;\cos \theta\ \end{bmatrix} \begin{bmatrix} x\y\ \end{bmatrix}$$</li>
+<li><script type="math/tex; mode=display">\begin{bmatrix} xx\\yy\\ \end{bmatrix}  = \begin{bmatrix} \cos \theta&-\sin \theta\\ \sin \theta&\cos \theta\\ \end{bmatrix} \begin{bmatrix} x\\y\\ \end{bmatrix}</script></li>
 <li><strong>ATTENTION</strong>：旋转的中心默认是原点（0,0）</li>
 <li>易得，旋转矩阵的逆矩阵就等于旋转矩阵的转置矩阵，所以旋转矩阵是</li>
 </ul>
 </li>
 <li>Translation:<ul>
-<li>$$ \begin{bmatrix} xx\yy\ \end{bmatrix}  &#x3D; \begin{bmatrix} a&amp;b\ c&amp;d\ \end{bmatrix} \begin{bmatrix} x\y\ \end{bmatrix} + \begin{bmatrix} Tx\Ty\ \end{bmatrix}$$</li>
+<li><script type="math/tex; mode=display">\begin{bmatrix} xx\\yy\\ \end{bmatrix}  = \begin{bmatrix} a&b\\ c&d\\ \end{bmatrix} \begin{bmatrix} x\\y\\ \end{bmatrix} + \begin{bmatrix} Tx\\Ty\\ \end{bmatrix}</script></li>
 <li>Translation cannot be represented in matrix form.</li>
 <li>So, translation is <strong>NOT linear transform</strong>!<strong>不是线性变换!</strong></li>
 </ul>
 </li>
 <li>Solution:<ul>
 <li>给二维的向量加上第三维的变量，then transform become：</li>
-<li>$$ \begin{bmatrix} xx\yy\1\ \end{bmatrix}  &#x3D; \begin{bmatrix} 1&amp;0&amp;Tx\ 0&amp;1&amp;Ty\ 0&amp;0&amp;1\ \end{bmatrix} \begin{bmatrix} x\y\1\ \end{bmatrix} $$</li>
-<li>0和1的妙处：让点保持数值上的不变，让向量保持无固定起点的性质，比如向量和向量相加减还是向量，点相减的结果变成向量（1-1&#x3D;0），点和向量相加的结果变成点（1+0&#x3D;1）。<ul>
+<li><script type="math/tex; mode=display">\begin{bmatrix} xx\\yy\\1\\ \end{bmatrix}  = \begin{bmatrix} 1&0&Tx\\ 0&1&Ty\\ 0&0&1\\ \end{bmatrix} \begin{bmatrix} x\\y\\1\\ \end{bmatrix}</script></li>
+<li>0和1的妙处：让点保持数值上的不变，让向量保持无固定起点的性质，比如向量和向量相加减还是向量，点相减的结果变成向量（1-1=0），点和向量相加的结果变成点（1+0=1）。<ul>
 <li>两个点相加的几何意义：取两点的中点</li>
 </ul>
 </li>
@@ -407,15 +408,15 @@
 </li>
 <li><p>三维向量的变换：</p>
 <ul>
-<li>$$ \begin{bmatrix} xx\yy\zz\1\ \end{bmatrix}  &#x3D; \begin{bmatrix} 1&amp;0&amp;0&amp;Tx\ 0&amp;1&amp;0&amp;Ty\ 0&amp;0&amp;1&amp;Tz\ 0&amp;0&amp;0&amp;1\ \end{bmatrix} \begin{bmatrix} x\y\z\1\ \end{bmatrix} $$</li>
+<li><script type="math/tex; mode=display">\begin{bmatrix} xx\\yy\\zz\\1\\ \end{bmatrix}  = \begin{bmatrix} 1&0&0&Tx\\ 0&1&0&Ty\\ 0&0&1&Tz\\ 0&0&0&1\\ \end{bmatrix} \begin{bmatrix} x\\y\\z\\1\\ \end{bmatrix}</script></li>
 <li>在三维的基础上再加一维</li>
 <li>scale和translation和二维变量差不多</li>
 <li>Rotate：<ul>
 <li>将旋转拆成三个方向上的旋转，三个变换矩阵相乘也有相同的效果</li>
-<li>$$ R_{xyz}(\alpha,\beta,\gamma) &#x3D; R_x(\alpha )R_y(\beta) R_z(\gamma) $$</li>
-<li>$$ R_x(\alpha ) &#x3D;  \begin{bmatrix} 1&amp;0&amp;0&amp;1\ 0&amp;\cos \alpha&amp;-\sin \alpha&amp;1\ 0&amp;\sin \alpha&amp;\cos \alpha&amp;1\ 0&amp;0&amp;0&amp;1\ \end{bmatrix} $$</li>
-<li>$$ R_y(\alpha ) &#x3D;  \begin{bmatrix}  \cos \alpha&amp;0&amp;\sin \alpha&amp;1\ 0&amp;1&amp;0&amp;1\ -\sin \alpha&amp;0&amp;\cos \alpha&amp;1\0&amp;0&amp;0&amp;1\ \end{bmatrix} $$</li>
-<li>$$ R_z(\alpha ) &#x3D;  \begin{bmatrix}  \cos \alpha&amp;-\sin \alpha&amp;0&amp;1\ \sin \alpha&amp;\cos \alpha&amp;0&amp;1\ 0&amp;0&amp;1&amp;1\0&amp;0&amp;0&amp;1\ \end{bmatrix} $$</li>
+<li><script type="math/tex; mode=display">R_{xyz}(\alpha,\beta,\gamma) = R_x(\alpha )R_y(\beta) R_z(\gamma)</script></li>
+<li><script type="math/tex; mode=display">R_x(\alpha ) =  \begin{bmatrix} 1&0&0&1\\ 0&\cos \alpha&-\sin \alpha&1\\ 0&\sin \alpha&\cos \alpha&1\\ 0&0&0&1\\ \end{bmatrix}</script></li>
+<li><script type="math/tex; mode=display">R_y(\alpha ) =  \begin{bmatrix}  \cos \alpha&0&\sin \alpha&1\\ 0&1&0&1\\ -\sin \alpha&0&\cos \alpha&1\\0&0&0&1\\ \end{bmatrix}</script></li>
+<li><script type="math/tex; mode=display">R_z(\alpha ) =  \begin{bmatrix}  \cos \alpha&-\sin \alpha&0&1\\ \sin \alpha&\cos \alpha&0&1\\ 0&0&1&1\\0&0&0&1\\ \end{bmatrix}</script></li>
 <li>Rodrigues’ Rotation Formula</li>
 <li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula">罗德里格斯旋转公式 - 维基百科，自由的百科全书 (wikipedia.org)</a></li>
 </ul>
@@ -427,22 +428,22 @@
 <li>模型变换：</li>
 <li>视图变换：<ul>
 <li>确定一个相机的三要素：<ul>
-<li>Position  $$\vec{e}$$</li>
-<li>Look-at &#x2F; gaze direction  $$\vec{g}$$</li>
-<li>Up direction (assuming perp. to look-at) $$\vec{t}$$</li>
+<li>Position  <script type="math/tex">\vec{e}</script></li>
+<li>Look-at / gaze direction  <script type="math/tex">\vec{g}</script></li>
+<li>Up direction (assuming perp. to look-at) <script type="math/tex">\vec{t}</script></li>
 </ul>
 </li>
 <li>step1:transform the camera to the origin, up at Y, look at -Z<ul>
 <li>Translate e to origin<ul>
-<li>$$ t&#x3D;  \begin{bmatrix} 1&amp;0&amp;0&amp;-Xe\ 0&amp;1&amp;0&amp;-Ye\ 0&amp;0&amp;1&amp;-Ze\0&amp;0&amp;0&amp;1\ \end{bmatrix} $$</li>
+<li><script type="math/tex; mode=display">t=  \begin{bmatrix} 1&0&0&-Xe\\ 0&1&0&-Ye\\ 0&0&1&-Ze\\0&0&0&1\\ \end{bmatrix}</script></li>
 </ul>
 </li>
 <li>Rotate g to -Z, t to Y, (g x t) To X<ul>
 <li>it’s difficult to rotate,so consider its inverse rotation</li>
 <li>在之前的学习中，可以发现，旋转矩阵中的值即为x,y,z三个轴的单位向量旋转后的值,现在要将（0，0,-1）旋转至g，（0,1,0）旋转至t，（1,0,0）旋转至</li>
-<li>$$g \times t$$</li>
-<li>$$ R^T &#x3D;  \begin{bmatrix} X_{\vec{g} \times \vec{t}}&amp;X_t&amp;X_-g&amp;0\ Y_{\vec{g} \times \vec{t}}&amp;Y_t&amp;Y_-g&amp;0\ Z_{\vec{g} \times \vec{t}}&amp;Z_t&amp;Z_-g&amp;0\ 0&amp;0&amp;0&amp;1\ \end{bmatrix} $$</li>
-<li>$$ R&#x3D;  \begin{bmatrix} X_{\vec{g} \times \vec{t}}&amp;Y_{\vec{g} \times \vec{t}}&amp;Z_{\vec{g} \times \vec{t}}&amp;0\ X_t&amp;Y_t&amp;Z_t&amp;0\ X_-g&amp;Y_-g&amp;Z_-g&amp;0\0&amp;0&amp;0&amp;1\ \end{bmatrix} $$</li>
+<li><script type="math/tex; mode=display">g \times t</script></li>
+<li><script type="math/tex; mode=display">R^T =  \begin{bmatrix} X_{\vec{g} \times \vec{t}}&X_t&X_-g&0\\ Y_{\vec{g} \times \vec{t}}&Y_t&Y_-g&0\\ Z_{\vec{g} \times \vec{t}}&Z_t&Z_-g&0\\ 0&0&0&1\\ \end{bmatrix}</script></li>
+<li><script type="math/tex; mode=display">R=  \begin{bmatrix} X_{\vec{g} \times \vec{t}}&Y_{\vec{g} \times \vec{t}}&Z_{\vec{g} \times \vec{t}}&0\\ X_t&Y_t&Z_t&0\\ X_-g&Y_-g&Z_-g&0\\0&0&0&1\\ \end{bmatrix}</script></li>
 </ul>
 </li>
 </ul>
@@ -460,38 +461,39 @@
 <li><strong>canonical cube</strong>：即以原点为中心，边长为2的立方体</li>
 <li>why to a canonical cube:为了之后的计算更加的方便而已，在转换到屏幕坐标的时候就会重新拉伸回来，正交投影的变化核心是，所有物体的相对大小位置都不会有任何变化。</li>
 <li>宽[l,r],高[b,t],长[f,n]</li>
-<li>$$  M&#x3D;  \begin{bmatrix}  2\over(r-l)&amp;0&amp;0&amp;0\  0&amp;2\over(t-b)&amp;0&amp;0\  0&amp;0&amp;2\over(n-f)&amp;0\0&amp;0&amp;0&amp;1\  \end{bmatrix}<br>  \begin{bmatrix} 1&amp;0&amp;0&amp;-(l+r)\over 2\ 0&amp;1&amp;0&amp;-(b+t)\over2\ 0&amp;0&amp;1&amp;-(f+n)\over2\0&amp;0&amp;0&amp;1\ \end{bmatrix}$$</li>
+<li><script type="math/tex; mode=display">M=  \begin{bmatrix}  2\over(r-l)&0&0&0\\  0&2\over(t-b)&0&0\\  0&0&2\over(n-f)&0\\0&0&0&1\\  \end{bmatrix} 
+  \begin{bmatrix} 1&0&0&-(l+r)\over 2\\ 0&1&0&-(b+t)\over2\\ 0&0&1&-(f+n)\over2\\0&0&0&1\\ \end{bmatrix}</script></li>
 </ul>
 </li>
 <li>透视投影：<ul>
-<li><strong>recall</strong>:(x, y, z, 1), (kx, ky, kz, k !&#x3D; 0), (xz, yz, z2, z !&#x3D; 0) all represent the same point (x, y, z) in 3D</li>
+<li><strong>recall</strong>:(x, y, z, 1), (kx, ky, kz, k != 0), (xz, yz, z2, z != 0) all represent the same point (x, y, z) in 3D</li>
 <li>step:<ul>
 <li>先通过某种变换把这个视锥体压缩成一个长方体</li>
 <li>再把长方体移到原点上压缩成标准立方体，即等于执行正交投影变换</li>
 </ul>
 </li>
 <li>压缩的过程中很简单就可以用相似三角形找到x，y的变换公式，现在要找到一个变换矩阵实现目标的变换</li>
-<li><img src="https://cdn.jsdelivr.net/gh/arsnshsj/blog-imgs@main/3.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></li>
-<li><img src="https://cdn.jsdelivr.net/gh/arsnshsj/blog-imgs@main/1.png" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></li>
+<li><img src="Https://cdn.jsdelivr.net/gh/arsnshsj/blog-imgs@main/3.png" alt="" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></li>
+<li><img src="Https://cdn.jsdelivr.net/gh/arsnshsj/blog-imgs@main/1.png" alt="" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></li>
 <li>可以求出</li>
-<li>$$ M&#x3D;  \begin{bmatrix} n&amp;0&amp;0&amp;0\ 0&amp;n&amp;0&amp;0\ ?&amp;?&amp;?&amp;?\0&amp;0&amp;1&amp;0\ \end{bmatrix} $$</li>
+<li><script type="math/tex; mode=display">M=  \begin{bmatrix} n&0&0&0\\ 0&n&0&0\\ ?&?&?&?\\0&0&1&0\\ \end{bmatrix}</script></li>
 <li>要求第三行的未知值，有两个可以列方程的地方<ul>
 <li>Any point on the near plane will not change<ul>
 <li>Near plane上的任意点，设为(i,j,n)，它的z值不变依旧为 n，既经过变换(x,y,n,1)-&gt;(nx,ny,n^n,n)</li>
-<li>$$  \begin{bmatrix} 0&amp;0&amp;A&amp;B\  \end{bmatrix}  \begin{bmatrix} x\y\n\1  \end{bmatrix} &#x3D; n^2 $$</li>
+<li><script type="math/tex; mode=display">\begin{bmatrix} 0&0&A&B\\  \end{bmatrix}  \begin{bmatrix} x\\y\\n\\1  \end{bmatrix} = n^2</script></li>
 </ul>
 </li>
 <li>Any point’s z on the far plane will not change<ul>
 <li>Far plane上的任意点，设为(k,l,f)，它的z值不变依旧为 f。</li>
 <li>同理</li>
-<li>$$  \begin{bmatrix} 0&amp;0&amp;A&amp;B\  \end{bmatrix}  \begin{bmatrix} x\y\f\1  \end    {bmatrix} &#x3D; f^2 $$</li>
+<li><script type="math/tex; mode=display">\begin{bmatrix} 0&0&A&B\\  \end{bmatrix}  \begin{bmatrix} x\\y\\f\\1  \end    {bmatrix} = f^2</script></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>result:</li>
-<li>$$ A &#x3D; n + f, B &#x3D; -nf $$</li>
-<li>$$ M&#x3D;  \begin{bmatrix} n&amp;0&amp;0&amp;0\ 0&amp;n&amp;0&amp;0\ 0&amp;0&amp;n+f&amp;-nf\0&amp;0&amp;1&amp;0\ \end{bmatrix} $$</li>
+<li><script type="math/tex; mode=display">A = n + f, B = -nf</script></li>
+<li><script type="math/tex; mode=display">M=  \begin{bmatrix} n&0&0&0\\ 0&n&0&0\\ 0&0&n+f&-nf\\0&0&1&0\\ \end{bmatrix}</script></li>
 </ul>
 </li>
 </ul>
