@@ -35,7 +35,7 @@
     <!-- meta -->
 
 
-<title>Archive: 2023/10 | Hexo</title>
+<title>常用git指令（自用） | Hexo</title>
 
 
 
@@ -43,11 +43,15 @@
 
     <!-- OpenGraph -->
  
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://arsnshsj.github.io/archives/2023/10/index.html">
+    <meta name="description" content="1234567891011121314151617181920212223242526272829303132touch (file name) &#x2F;&#x2F;build filegit init    git add .    git commitgit branch (branch name) &#x2F;&#x2F;build branchgit checkout (branch name) &#x2F;&#x2F;switch branc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用git指令（自用）">
+<meta property="og:url" content="https://arsnshsj.github.io/2025/02/24/%E5%B8%B8%E7%94%A8git%E6%8C%87%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132touch (file name) &#x2F;&#x2F;build filegit init    git add .    git commitgit branch (branch name) &#x2F;&#x2F;build branchgit checkout (branch name) &#x2F;&#x2F;switch branc">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-02-24T11:38:26.000Z">
+<meta property="article:modified_time" content="2025-02-24T11:39:41.838Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -57,6 +61,11 @@
  
 
     
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/highlight.css" media="none" onload="this.media='all'">
+        
+    
+
     
     
 
@@ -114,236 +123,90 @@
 </header>
 
 
-    <div class="cover">
-        <div class="cover__logo">
-            
-                <h1>XiaoChen&#39;s Notes</h1>
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        常用git指令（自用）
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2025/02/" class="post-meta__date button">2025-02-24</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#git%E6%8A%A5%E9%94%99-failed-to-connect-to-github.com-port-443-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">1.</span> <span class="toc-text">Git报错：
+Failed to connect to github.com port 443 解决方案</span></a></li></ol>
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">Article Directory</div>
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#git%E6%8A%A5%E9%94%99-failed-to-connect-to-github.com-port-443-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">1.</span> <span class="toc-text">Git报错：
+Failed to connect to github.com port 443 解决方案</span></a></li></ol>
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> (file name) //build file</span><br><span class="line"></span><br><span class="line">git init    </span><br><span class="line">git add .    </span><br><span class="line">git commit</span><br><span class="line"></span><br><span class="line">git branch (branch name) //build branch</span><br><span class="line">git checkout (branch name) //switch branch</span><br><span class="line">git branch //see the branch</span><br><span class="line">git branch -d (branchname) // delete branch</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git remote add origin git@github.com:username/reponame.git</span><br><span class="line">git push -u origin master</span><br><span class="line">git push [<span class="built_in">alias</span>] [branch]</span><br><span class="line">git pull origin master//拉取</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git <span class="built_in">log</span> //查看日志</span><br><span class="line"></span><br><span class="line">//推送本地分支到远程不同名分支</span><br><span class="line">git branch -u origin/&lt;远程分支名&gt; //设置当前分支为跟踪分支</span><br><span class="line">git branch -vv //查看跟踪版本</span><br><span class="line">git push origin &lt;本地分支名&gt;:&lt;远程分支名&gt; //推送</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//克隆指定分支</span><br><span class="line">git <span class="built_in">clone</span> -b &lt;branchname&gt; &lt;remote-repo-url&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git remote //查看有哪些远程仓库</span><br><span class="line">git remote -v//查看具体地址</span><br></pre></td></tr></table></figure>
+<h5
+id="git报错-failed-to-connect-to-github.com-port-443-解决方案">Git报错：
+Failed to connect to github.com port 443 解决方案</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --get http.proxy</span><br><span class="line">git config --global --get https.proxy</span><br></pre></td></tr></table></figure>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2025-02-24</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
             
         </div>
-        
-        
-            <div class="cover__intro">
-                <p>如果什么都不做，那就什么也不会开始。</p>
- 
-            </div>
-        
+        <div class="nav__next">
+            
+                <a href="/2024/03/26/GAMES101-ep01-04/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            GAMES101_ep01-04
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
     </div>
 
-            
-<main class='main'>
-    
-		
-    <div class="post-list">
-        
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        过去_渡边
-    </h2>
-    
-        Here's something encrypted, password is required to continue reading.
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/10/" class="post-meta__date button">2023-10-27</a>
-    
-    <span class="separate-dot"></span><a href="/categories/%E7%9F%AD%E7%AF%87/" class="button">短篇</a>
-
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/%E8%A1%8D%E7%94%9F1/" class="post-tags__link button"># 衍生1</a></div> 
-<a href="/2023/10/27/%E8%BF%87%E5%8E%BB_%E6%B8%A1%E8%BE%B9/" class="post-entry__link">过去_渡边</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        板子
-    </h2>
-    
-        <p>
-            拓扑排序
-12
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/10/" class="post-meta__date button">2023-10-18</a>
-    
-    <span class="separate-dot"></span><a href="/categories/%E6%88%91%E5%AD%A6%E5%BA%9F%E4%BA%86/" class="button">我学废了</a>
-
- 
-</div>
-<div class="post-entry__tags"></div> 
-<a href="/2023/10/18/%E6%9D%BF%E5%AD%90/" class="post-entry__link">板子</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        skills
-    </h2>
-    
-        <p>
-            倍增
-当数据可以通过区间的形式进行维护，将线性的区间划分成长度为 \(2^k\)
-的子区间，维护这些子区间之间的关系的时间复杂度只需要 
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/10/" class="post-meta__date button">2023-10-15</a>
-    
-    <span class="separate-dot"></span><a href="/categories/%E6%88%91%E5%AD%A6%E5%BA%9F%E4%BA%86/" class="button">我学废了</a>
-
- 
-</div>
-<div class="post-entry__tags"></div> 
-<a href="/2023/10/15/skills/" class="post-entry__link">skills</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        ERROR REASONS
-    </h2>
-    
-        <p>
-            RE
-
-数组越界
-数组开得太大了
-递归爆栈
-## WA
-+ 图论题： 有重边且边的权值不同 （floyd此时有妙用）
-有自环，重边，负边
-
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/10/" class="post-meta__date button">2023-10-13</a>
-    
-    <span class="separate-dot"></span><a href="/categories/%E6%88%91%E5%AD%A6%E5%BA%9F%E4%BA%86/" class="button">我学废了</a>
-
- 
-</div>
-<div class="post-entry__tags"></div> 
-<a href="/2023/10/13/ERROR-REASONS/" class="post-entry__link">ERROR REASONS</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        ACM选修课复习笔记
-    </h2>
-    
-        <p>
-            单调栈
-12
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/10/" class="post-meta__date button">2023-10-11</a>
-    
-    <span class="separate-dot"></span><a href="/categories/%E6%88%91%E5%AD%A6%E5%BA%9F%E4%BA%86/" class="button">我学废了</a>
-
- 
-</div>
-<div class="post-entry__tags"></div> 
-<a href="/2023/10/11/ACM%E9%80%89%E4%BF%AE%E8%AF%BE%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-entry__link">ACM选修课复习笔记</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        ‘文化常识看这里’
-    </h2>
-    
-        <p>
-            多看
-
-古代文化常识
-
-《中国古代文化常识》王力，讲各种古代基本常识的，内容比较简略，适合当目录看
-
-《食货》候会，各种金融、税收、物价、...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/10/" class="post-meta__date button">2023-10-11</a>
-    
-    <span class="separate-dot"></span><a href="/categories/%E6%BA%90%E4%BA%8E%E7%94%9F%E6%B4%BB/" class="button">源于生活</a>
-
- 
-</div>
-<div class="post-entry__tags"></div> 
-<a href="/2023/10/11/%E2%80%98%E6%96%87%E5%8C%96%E5%B8%B8%E8%AF%86%E7%9C%8B%E8%BF%99%E9%87%8C%E2%80%99/" class="post-entry__link">‘文化常识看这里’</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        追剧日记
-    </h2>
-    
-        Here's something encrypted, password is required to continue reading.
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/10/" class="post-meta__date button">2023-10-11</a>
-    
-    <span class="separate-dot"></span><a href="/categories/%E5%A8%B1%E4%B9%90%E8%87%B3%E6%AD%BB/" class="button">娱乐至死</a>
-
- 
-</div>
-<div class="post-entry__tags"></div> 
-<a href="/2023/10/11/%E8%BF%BD%E5%89%A7%E6%97%A5%E8%AE%B0/" class="post-entry__link">追剧日记</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        莲花楼番外
-    </h2>
-    
-        <p>
-            莲花楼番外
-
-相约决战之日，东海边。 “剑断人亡……” 方多病喃喃道。
-一代武林第一高手李相夷与笛飞声一战后渺无音信，蛰伏十余年，今朝再现江湖，一出击则攻破了恶徒单孤刀及其南胤残党造反复国的谋划。
-江湖人自以为四顾...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/10/" class="post-meta__date button">2023-10-09</a>
-    
-    <span class="separate-dot"></span><a href="/categories/%E7%9F%AD%E7%AF%87/" class="button">短篇</a>
-
- 
-</div>
-<div class="post-entry__tags"></div> 
-<a href="/2023/10/09/%E8%8E%B2%E8%8A%B1%E6%A5%BC%E7%95%AA%E5%A4%96/" class="post-entry__link">莲花楼番外</a>
-                </div>
-            
-        
-    </div>
-    
 
 
-	
+
+
 </main>
 
             <footer class="footer">
